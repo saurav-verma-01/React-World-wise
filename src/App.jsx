@@ -4,11 +4,13 @@ import Products from "./pages/Products";
 import Pricing from "./pages/Pricing";
 import Home from "./pages/Home";
 import PageNotFound from "./pages/PageNotFound";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   // const x = 34;
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="product" element={<Products />} />
